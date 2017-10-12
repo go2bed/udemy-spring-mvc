@@ -1,11 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Student name</title>
 </head>
 <body>
 <h2>Hello World of Spring!</h2>
-Student name: ${name}
+Student name: ${param.name}
 
 
 </body>

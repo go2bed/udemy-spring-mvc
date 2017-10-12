@@ -12,14 +12,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HelloWorldController {
 
-    @RequestMapping(value = "/showForm")
+    @RequestMapping("/showForm")
     public String showForm() {
         return "helloworld-form";
     }
 
-    @RequestMapping(value = "/processForm")
-    public String processForm(@ModelAttribute("name") String name, ModelMap model) {
-        model.addAttribute("name", name);
+    @RequestMapping("/processForm")
+    public String processForm() {
         return "helloworld";
     }
 }

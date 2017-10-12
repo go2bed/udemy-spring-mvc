@@ -7,6 +7,6 @@
 <h2>Spring MVC Demo - Home page</h2>
 
 ${message}
-<a href="/showForm">show the form</a>
+<a href="showForm">show the form</a>
 </body>
 </html>

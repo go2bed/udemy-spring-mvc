@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/")
     public String index(ModelMap model){
         model.addAttribute("message", "Spring MVC XML Config Example");
         return "main-menu";

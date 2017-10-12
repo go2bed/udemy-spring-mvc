@@ -4,9 +4,9 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Spring MVC Demo - Home page</h2>
+<h2>Hello World of Spring!</h2>
+Student name: ${name}
 
-${message}
-<a href="/showForm">show the form</a>
+
 </body>
 </html>

@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
-    <title>Hello World - Inpuy Form</title>
+    <title>Hello World - Input Form</title>
 </head>
 <body>
 <form action="hello/processForm" method="get">

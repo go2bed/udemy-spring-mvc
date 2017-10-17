@@ -11,6 +11,6 @@ ${message}
 <br>
 <img src="${pageContext.request.contextPath}/resources/images/cat.jpeg"  height="200">
 <br>
-<a href="showForm">Hello World form</a>
+<a href="hello/showForm">Hello World form</a>
 </body>
 </html>

@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author Andrey_Chadov on 10/12/2017.
  */
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldController {
 
     @RequestMapping("/showForm")

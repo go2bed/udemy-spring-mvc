@@ -3,6 +3,7 @@ package com.epam.spring.mvc.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -23,9 +24,7 @@ public class HelloWorldController {
     }
 
     @RequestMapping("/processFormVersionTwo")
-    public String letsShoutDude(HttpServletRequest request, Model model){
-        //read request parameter from the HTML form
-        String theName = request.getParameter("studentName");
+    public String letsShoutDude(@RequestParam("studentName") String theName, Model model){
 
         //convert the data to all caps
         theName = theName.toUpperCase();

@@ -1,5 +1,7 @@
 package com.epam.spring.mvc.model;
 
+import java.util.LinkedHashMap;
+
 /**
  * @author Andrey_Chadov on 10/17/2017.
  */
@@ -11,9 +13,26 @@ public class Student {
 
     private String country;
 
+
+    private LinkedHashMap<String, String> countryOptions;
+
+
+
     public Student() {
+
+        //populate country options: used ISO country code
+        countryOptions = new LinkedHashMap<>();
+        countryOptions.put("BR", "Brazil");
+        countryOptions.put("FR", "France");
+        countryOptions.put("IN", "India");
+        countryOptions.put("DE", "Germany");
+
     }
 
+
+    public LinkedHashMap<String, String> getCountryOptions() {
+        return countryOptions;
+    }
 
     public String getCountry() {
         return country;

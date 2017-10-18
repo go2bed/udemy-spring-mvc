@@ -1,6 +1,7 @@
 package com.epam.spring.mvc.model;
 
-import java.util.LinkedHashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author Andrey_Chadov on 10/17/2017.
@@ -13,8 +14,23 @@ public class Student {
 
     private String country;
 
-    public Student() {
+    private Set<String> favoriteLanguage;
 
+    public Student() {
+        favoriteLanguage = new HashSet<>();
+        favoriteLanguage.add("Java");
+        favoriteLanguage.add("Python");
+        favoriteLanguage.add("Ruby");
+        favoriteLanguage.add("C#");
+
+    }
+
+    public Set<String> getFavoriteLanguage() {
+        return favoriteLanguage;
+    }
+
+    public void setFavoriteLanguage(Set<String> favoriteLanguage) {
+        this.favoriteLanguage = favoriteLanguage;
     }
 
 

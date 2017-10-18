@@ -10,9 +10,9 @@ ${message}
 <hr>
 <br>
 <img src="${pageContext.request.contextPath}/resources/images/cat.jpeg"  height="200">
-<br>
+<br><br>
 <a href="hello/showForm">Hello World form</a>
-
+<br><br>
 <a href="student/showForm">Student form</a>
 </body>
 </html>

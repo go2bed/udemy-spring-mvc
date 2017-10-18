@@ -14,6 +14,7 @@
     <mvc:resources mapping="/resources/**" location="/resources/"/>
     <util:properties id="countryOptions" location="classpath:/countries.properties" />
 
+
     <mvc:annotation-driven/>
 
      <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

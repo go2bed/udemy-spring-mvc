@@ -22,11 +22,7 @@
     <br><br>
     Favorite Language:
 
-    Java <form:radiobutton path="favoriteLanguage" value="Java"/>
-    Python <form:radiobutton path="favoriteLanguage" value="Python"/>
-    Ruby <form:radiobutton path="favoriteLanguage" value="Ruby"/>
-    C# <form:radiobutton path="favoriteLanguage" value="C#"/>
-
+    <form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}"  />
 
     <br><br>
 

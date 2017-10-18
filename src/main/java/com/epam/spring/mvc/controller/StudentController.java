@@ -20,6 +20,7 @@ public class StudentController {
     private Map<String, String> countryOptions;
 
 
+
     @RequestMapping("/showForm")
     public String showForm(Model theModel){
 
@@ -33,6 +34,7 @@ public class StudentController {
 
         // add the country options to the model
         theModel.addAttribute("theCountryOptions", countryOptions);
+
 
         return "student-form";
     }

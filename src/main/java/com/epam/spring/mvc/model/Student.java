@@ -1,6 +1,7 @@
 package com.epam.spring.mvc.model;
 
 import java.util.LinkedHashMap;
+import java.util.Set;
 
 /**
  * @author Andrey_Chadov on 10/17/2017.
@@ -17,6 +18,8 @@ public class Student {
 
     private LinkedHashMap<String, String> favoriteLanguageOptions;
 
+    private String[] operatingSystems;
+
     public Student() {
         // populate favorite language options
         favoriteLanguageOptions = new LinkedHashMap<>();
@@ -28,6 +31,14 @@ public class Student {
         favoriteLanguageOptions.put("Python", "Python");
         favoriteLanguageOptions.put("Ruby", "Ruby");
 
+    }
+
+    public String[] getOperatingSystems() {
+        return operatingSystems;
+    }
+
+    public void setOperatingSystems(String[] operatingSystems) {
+        this.operatingSystems = operatingSystems;
     }
 
     public String getFavoriteLanguage() {

@@ -3,16 +3,18 @@
 
 <html>
 <head>
-    <head>
-        <title>Customer confirmation page</title>
-    </head>
+
+    <title>Customer confirmation page</title>
+</head>
 <body>
 
 
 The customer is confirmed: ${customer.firstName} ${customer.lastName}
 <br><br>
-Free passes:  ${customer.freePasses}
+Free passes: ${customer.freePasses}
 
+<br><br>
+Postal code: ${customer.postalCode}
 <br><br>
 
 </body>

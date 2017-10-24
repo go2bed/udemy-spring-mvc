@@ -1,6 +1,8 @@
 package com.epam.spring.mvc.model;
 
 
+import com.epam.spring.mvc.validation.annotations.CourseCode;
+
 import javax.validation.constraints.*;
 
 
@@ -22,6 +24,9 @@ public class Customer {
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
     private String postalCode;
+
+    @CourseCode
+    private String courseCode;
 
     public Customer() {
     }
@@ -58,4 +63,11 @@ public class Customer {
         this.freePasses = freePasses;
     }
 
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
 }

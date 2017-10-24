@@ -24,12 +24,20 @@
     <form:errors path="lastName" cssClass="error"/>
 
     <br><br>
-    Postal code: <form:input path="postalCode" />
-    <form:errors cssClass="error" path="postalCode" />
+
+    Postal code: <form:input path="postalCode"/>
+    <form:errors cssClass="error" path="postalCode"/>
+
     <br><br>
 
-    Free passes: <form:input path="freePasses"  />
-    <form:errors cssClass="error" path="freePasses" />
+    Free passes: <form:input path="freePasses"/>
+    <form:errors cssClass="error" path="freePasses"/>
+
+    <br><br>
+
+    Course code: <form:input path="courseCode"/>
+    <form:errors cssClass="error" path="courseCode"/>
+
     <br><br>
 
     <input type="submit" value="Submit"/>

@@ -28,7 +28,7 @@
     <form:errors cssClass="error" path="postalCode" />
     <br><br>
 
-    Free passes: <form:input path="freePasses" />
+    Free passes: <form:input path="freePasses"  />
     <form:errors cssClass="error" path="freePasses" />
     <br><br>
 

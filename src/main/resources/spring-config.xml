@@ -15,6 +15,12 @@
     <util:properties id="countryOptions" location="classpath:/countries.properties" />
 
 
+
+    <!--Load custom message resources-->
+    <bean id="messageSource"
+          class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames" value="messages"/>
+    </bean>
     <mvc:annotation-driven/>
 
      <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
